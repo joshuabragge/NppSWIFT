@@ -1,0 +1,7 @@
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\bin\Debug\SWIFTPlugin.dll
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\bin\Debug\SWIFTPlugin.pdb
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\obj\x86\Debug\Kbg.NppPluginNET.frmMyDlg.resources
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\obj\x86\Debug\SWIFTPlugin.Properties.Resources.resources
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\obj\x86\Debug\SWIFTPlugin.csproj.GenerateResource.Cache
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\obj\x86\Debug\SWIFTPlugin.dll
+c:\users\jimmy\documents\visual studio 2015\Projects\SWIFTPlugin\SWIFTPlugin\obj\x86\Debug\SWIFTPlugin.pdb
