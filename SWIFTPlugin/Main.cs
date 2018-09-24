@@ -6,10 +6,14 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using Kbg.NppPluginNET.PluginInfrastructure;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Linq;
+using Kbg.NppPluginNET;
 
 namespace Kbg.NppPluginNET
 {
-    class Main
+    public static class Main
     {
         internal const string PluginName = "SWIFT";
         static string iniFilePath = null;
@@ -19,6 +23,9 @@ namespace Kbg.NppPluginNET
         static Bitmap tbBmp = Properties.Resources.star;
         static Bitmap tbBmp_tbTab = Properties.Resources.star_bmp;
         static Icon tbIcon = null;
+        static IScintillaGateway editor = new ScintillaGateway(PluginBase.GetCurrentScintilla());
+        static INotepadPPGateway notepad = new NotepadPPGateway();
+        static SWIFTInformation swiftInfo = new SWIFTInformation();
 
         public static void OnNotification(ScNotification notification)
         {
@@ -58,8 +65,72 @@ namespace Kbg.NppPluginNET
 
         internal static void MT950()
         {
-            MessageBox.Show("MT950");
+            // select all content in active page
+            editor.SelectAll();
+            int length = editor.GetLength();
+            string activePageText = editor.GetText(length + 1);
+            string activeTextFlattened = Regex.Replace(activePageText, @"\r\n?|\n", "");
+            string modifiedResults = null;
+            HashSet<string> unqiueResults = new HashSet<string>();
 
+            // grab each message
+            Regex swiftContentPattern = new Regex(@"{.*?(-})");
+            //Regex swiftContentPattern = new Regex(@"\{4:(?=.*)[^}]+}");
+
+            // basic header fields
+            Regex firstContentPattern = new Regex(@"\{1:(?=.*)[^}]+}");
+            Regex secondContentPattern = new Regex(@"\{2:(?=.*)[^}]+}");
+
+            var swiftContentMatches = swiftContentPattern.Matches(activeTextFlattened);
+            foreach (Match match in swiftContentMatches)
+            {
+                unqiueResults.Clear();
+                string headerOne = firstContentPattern.Match(match.ToString()).ToString() + "\n";
+                string headerTwo = secondContentPattern.Match(match.ToString()).ToString() + "\n";
+                modifiedResults = modifiedResults + headerOne + headerTwo;
+
+                //rename fields from :60: to opening_balance for example
+                foreach (var swiftMessageField in swiftInfo.swiftMessageFields)
+                {
+                    try
+                    {
+                        Regex tempRegex = new Regex(swiftMessageField.Value);
+                        string swiftField = tempRegex.Match(match.ToString()).ToString();
+                        if (!unqiueResults.Contains(swiftField))
+                        {
+                            string name = swiftInfo.swiftMessageNames[swiftMessageField.Key];
+                            swiftField = swiftField.Replace(swiftMessageField.Key, name);
+                            // only add lines that actually contain anything
+                            if (swiftField.Length > 0)
+                            {
+                                // add results to unique list as to not double add when regex rules are the same
+                                unqiueResults.Add(swiftField);
+                                modifiedResults = modifiedResults + swiftField + "\n";
+                            }
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show(swiftMessageField.Value+ " " + swiftField);
+                        }
+                        
+                    }
+                    catch
+                    {
+                        MessageBox.Show(swiftMessageField.Key);
+                    }
+                }
+                
+            }
+
+            editor.SelectAll();
+            editor.ReplaceSel(modifiedResults);
+
+        }
+
+        private static string IndexReplace(int index, int length, string reformatted)
+        {
+            throw new NotImplementedException();
         }
 
         internal static void PluginCleanUp()
