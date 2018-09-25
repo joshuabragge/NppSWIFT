@@ -8,7 +8,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Kbg.NppPluginNET.PluginInfrastructure
+namespace SWIFT.HumanifyMessage.PluginInfrastructure
 {
 
     [Flags]

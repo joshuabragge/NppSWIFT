@@ -5,13 +5,13 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
-using Kbg.NppPluginNET.PluginInfrastructure;
+using SWIFT.HumanifyMessage.PluginInfrastructure;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
-using Kbg.NppPluginNET;
+using SWIFT.HumanifyMessage;
 
-namespace Kbg.NppPluginNET
+namespace SWIFT.HumanifyMessage
 {
     public static class Main
     {
@@ -26,6 +26,10 @@ namespace Kbg.NppPluginNET
         static IScintillaGateway editor = new ScintillaGateway(PluginBase.GetCurrentScintilla());
         static INotepadPPGateway notepad = new NotepadPPGateway();
         static SWIFTInformation swiftInfo = new SWIFTInformation();
+        static Utils utils = new Utils();
+
+        static string version = "0.2";
+        static string date = "09.24.2018";
 
         public static void OnNotification(ScNotification notification)
         {
@@ -48,9 +52,9 @@ namespace Kbg.NppPluginNET
             iniFilePath = Path.Combine(iniFilePath, PluginName + ".ini");
             someSetting = (Win32.GetPrivateProfileInt("SomeSection", "SomeKey", 0, iniFilePath) != 0);
 
-            PluginBase.SetCommand(0, "MyMenuCommand", myMenuFunction, new ShortcutKey(false, false, false, Keys.None));
-            PluginBase.SetCommand(1, "MyDockableDialog", myDockableDialog); idMyDlg = 1;
-            PluginBase.SetCommand(2, "MT950", MT950);
+            PluginBase.SetCommand(1, "Humanify MT950", MT950, new ShortcutKey(false, true, true, Keys.N));
+            PluginBase.SetCommand(1, "---", null); idMyDlg = 1;
+            PluginBase.SetCommand(2, "Version", Version);
         }
 
         internal static void SetToolBarIcon()
@@ -63,69 +67,99 @@ namespace Kbg.NppPluginNET
             Marshal.FreeHGlobal(pTbIcons);
         }
 
+        internal static void Version()
+        {
+            string message = "Version: " + version + "\n" + "Last Updated: " + date;
+            MessageBox.Show(message);
+        }
+
         internal static void MT950()
         {
-            // select all content in active page
-            editor.SelectAll();
-            int length = editor.GetLength();
-            string activePageText = editor.GetText(length + 1);
-            string activeTextFlattened = Regex.Replace(activePageText, @"\r\n?|\n", "");
-            string modifiedResults = null;
-            HashSet<string> unqiueResults = new HashSet<string>();
-
-            // grab each message
-            Regex swiftContentPattern = new Regex(@"{.*?(-})");
-            //Regex swiftContentPattern = new Regex(@"\{4:(?=.*)[^}]+}");
-
-            // basic header fields
-            Regex firstContentPattern = new Regex(@"\{1:(?=.*)[^}]+}");
-            Regex secondContentPattern = new Regex(@"\{2:(?=.*)[^}]+}");
-
-            var swiftContentMatches = swiftContentPattern.Matches(activeTextFlattened);
-            foreach (Match match in swiftContentMatches)
+            try
             {
-                unqiueResults.Clear();
-                string headerOne = firstContentPattern.Match(match.ToString()).ToString() + "\n";
-                string headerTwo = secondContentPattern.Match(match.ToString()).ToString() + "\n";
-                modifiedResults = modifiedResults + headerOne + headerTwo;
+                // select all content in active page
+                editor.SelectAll();
+                int length = editor.GetLength();
+                string activePageText = editor.GetText(length + 1);
+                string activeTextFlattened = Regex.Replace(activePageText, @"\r\n?|\n", "");
+                string modifiedResults = null;
+                HashSet<string> unqiueResults = new HashSet<string>();
 
-                //rename fields from :60: to opening_balance for example
-                foreach (var swiftMessageField in swiftInfo.swiftMessageFields)
+                // grab each message
+                Regex mainSwiftContentPattern = new Regex(@"{.*?(-})+{.*?(:}})");
+                //Regex swiftContentPatternWithoutFooter = new Regex(@"{.*?(-})");
+
+                var swiftMessages = mainSwiftContentPattern.Matches(activeTextFlattened);
+                foreach (Match swiftMessage in swiftMessages)
                 {
-                    try
+                    // new match clear unique results tracker
+                    unqiueResults.Clear();
+
+                    //rename fields from :60: to opening_balance for example
+                    foreach (var swiftField in swiftInfo.swiftMessageFields)
                     {
-                        Regex tempRegex = new Regex(swiftMessageField.Value);
-                        string swiftField = tempRegex.Match(match.ToString()).ToString();
-                        if (!unqiueResults.Contains(swiftField))
+                        try
                         {
-                            string name = swiftInfo.swiftMessageNames[swiftMessageField.Key];
-                            swiftField = swiftField.Replace(swiftMessageField.Key, name);
-                            // only add lines that actually contain anything
-                            if (swiftField.Length > 0)
+                            // using swiftMessageField.Value as regex, find match in string
+                            string rawMessageField = utils.returnFirstStringMatch(swiftField.Value, swiftMessage.ToString());
+
+                            // only work with unique results since dictionaries contain duplicate regexs
+                            if (!unqiueResults.Contains(rawMessageField))
                             {
-                                // add results to unique list as to not double add when regex rules are the same
-                                unqiueResults.Add(swiftField);
-                                modifiedResults = modifiedResults + swiftField + "\n";
+                                string modifiedMainMessageField = null;
+                                try // replace field ID with human readable name
+                                {
+                                    string humanReadableFieldName = swiftInfo.swiftMessageNames[swiftField.Key];
+                                    modifiedMainMessageField = rawMessageField.Replace(swiftField.Key, humanReadableFieldName);
+                                }
+                                catch //otherwise leave the field ID in tact
+                                {
+                                    modifiedMainMessageField = rawMessageField;
+                                }
+
+                                // only work with lines that actually contain anything
+                                if (modifiedMainMessageField.Length > 0)
+                                {
+                                    unqiueResults.Add(rawMessageField);
+
+                                    string subFieldDetails = utils.buildSwiftSubFieldOutput(rawMessageField, swiftField.Key);
+
+                                    if (":5" == swiftField.Key)
+                                    {
+                                        modifiedResults = modifiedResults + "-}\n" + modifiedMainMessageField + "\n";
+                                    }
+                                    else
+                                    {
+                                        modifiedResults = modifiedResults + modifiedMainMessageField + subFieldDetails;
+                                    }
+
+                                }
                             }
-                            
+                            else
+                            {
+                                MessageBox.Show("Message Field " + swiftField.Value + " not unique " + swiftField);
+                            }
                         }
-                        else
+                        catch
                         {
-                            MessageBox.Show(swiftMessageField.Value+ " " + swiftField);
+                            MessageBox.Show("Error converting " + swiftField.Key);
                         }
-                        
-                    }
-                    catch
-                    {
-                        MessageBox.Show(swiftMessageField.Key);
                     }
                 }
-                
+
+                editor.SelectAll();
+                editor.ReplaceSel(modifiedResults);
+
             }
+            catch
+            {
+                MessageBox.Show("Error reading text on current page.\n Are you sure this is a MT950?", "Mismatch Error");
+            }
+        }
 
-            editor.SelectAll();
-            editor.ReplaceSel(modifiedResults);
-
+        private static void returnFirstStringMatch(string value, string v)
+        {
+            throw new NotImplementedException();
         }
 
         private static string IndexReplace(int index, int length, string reformatted)
@@ -138,47 +172,5 @@ namespace Kbg.NppPluginNET
             Win32.WritePrivateProfileString("SomeSection", "SomeKey", someSetting ? "1" : "0", iniFilePath);
         }
 
-
-        internal static void myMenuFunction()
-        {
-            MessageBox.Show("Hello N++!");
-        }
-
-        internal static void myDockableDialog()
-        {
-            if (frmMyDlg == null)
-            {
-                frmMyDlg = new frmMyDlg();
-
-                using (Bitmap newBmp = new Bitmap(16, 16))
-                {
-                    Graphics g = Graphics.FromImage(newBmp);
-                    ColorMap[] colorMap = new ColorMap[1];
-                    colorMap[0] = new ColorMap();
-                    colorMap[0].OldColor = Color.Fuchsia;
-                    colorMap[0].NewColor = Color.FromKnownColor(KnownColor.ButtonFace);
-                    ImageAttributes attr = new ImageAttributes();
-                    attr.SetRemapTable(colorMap);
-                    g.DrawImage(tbBmp_tbTab, new Rectangle(0, 0, 16, 16), 0, 0, 16, 16, GraphicsUnit.Pixel, attr);
-                    tbIcon = Icon.FromHandle(newBmp.GetHicon());
-                }
-
-                NppTbData _nppTbData = new NppTbData();
-                _nppTbData.hClient = frmMyDlg.Handle;
-                _nppTbData.pszName = "My dockable dialog";
-                _nppTbData.dlgID = idMyDlg;
-                _nppTbData.uMask = NppTbMsg.DWS_DF_CONT_RIGHT | NppTbMsg.DWS_ICONTAB | NppTbMsg.DWS_ICONBAR;
-                _nppTbData.hIconTab = (uint)tbIcon.Handle;
-                _nppTbData.pszModuleName = PluginName;
-                IntPtr _ptrNppTbData = Marshal.AllocHGlobal(Marshal.SizeOf(_nppTbData));
-                Marshal.StructureToPtr(_nppTbData, _ptrNppTbData, false);
-
-                Win32.SendMessage(PluginBase.nppData._nppHandle, (uint)NppMsg.NPPM_DMMREGASDCKDLG, 0, _ptrNppTbData);
-            }
-            else
-            {
-                Win32.SendMessage(PluginBase.nppData._nppHandle, (uint)NppMsg.NPPM_DMMSHOW, 0, frmMyDlg.Handle);
-            }
-        }
     }
 }

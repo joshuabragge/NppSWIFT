@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Kbg.NppPluginNET.PluginInfrastructure
+namespace SWIFT.HumanifyMessage.PluginInfrastructure
 {
     public class Win32
     {

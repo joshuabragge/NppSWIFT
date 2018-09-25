@@ -3,7 +3,7 @@ using System;
 using System.Text;
 using NppPluginNET.PluginInfrastructure;
 
-namespace Kbg.NppPluginNET.PluginInfrastructure
+namespace SWIFT.HumanifyMessage.PluginInfrastructure
 {
 	public interface INotepadPPGateway
 	{

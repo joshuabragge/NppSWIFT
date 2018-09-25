@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kbg.NppPluginNET.Properties {
+namespace SWIFT.HumanifyMessage.Properties {
     using System;
     
     

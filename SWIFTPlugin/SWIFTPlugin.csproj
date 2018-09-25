@@ -92,6 +92,7 @@
     </Compile>
     <Compile Include="PluginInfrastructure\UnmanagedExports.cs" />
     <Compile Include="SWIFTInformation.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\frmMyDlg.resx">

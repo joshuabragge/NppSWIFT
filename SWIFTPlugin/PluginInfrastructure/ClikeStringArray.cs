@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace Kbg.NppPluginNET.PluginInfrastructure
+namespace SWIFT.HumanifyMessage.PluginInfrastructure
 {
     public class ClikeStringArray : IDisposable
     {

@@ -2,9 +2,9 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using static Kbg.NppPluginNET.PluginInfrastructure.Win32;
+using static SWIFT.HumanifyMessage.PluginInfrastructure.Win32;
 
-namespace Kbg.NppPluginNET.PluginInfrastructure
+namespace SWIFT.HumanifyMessage.PluginInfrastructure
 {
     /// <summary>
     /// This it the plugin-writers primary interface to Notepad++/Scintilla.

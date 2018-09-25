@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Kbg.NppPluginNET
+namespace SWIFT.HumanifyMessage
 {
     public partial class frmMyDlg : Form
     {

@@ -7,7 +7,7 @@
 
 using System;
 
-namespace Kbg.NppPluginNET.PluginInfrastructure
+namespace SWIFT.HumanifyMessage.PluginInfrastructure
 {
     class Constants
     {

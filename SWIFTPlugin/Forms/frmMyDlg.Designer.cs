@@ -1,4 +1,4 @@
-﻿namespace Kbg.NppPluginNET
+﻿namespace SWIFT.HumanifyMessage
 {
     partial class frmMyDlg
     {
