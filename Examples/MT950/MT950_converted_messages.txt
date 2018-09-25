@@ -1,0 +1,702 @@
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
+{1:F01SAESVAV0AXXX0466020565}
+{2:O9501552070522LRLRXXXX4A0700005915090705221752N}
+transaction_reference_number:02711
+account_identification_statement:210057665066
+statement_sequence_number:00196
+opening_balance:C000103HKD672,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:672,
+statement_line:000103D642
+	debit_or_credit:D
+	value_date:000103
+	entry_date:
+	funds_code:
+	amount:642
+	transaction_type:
+	reference_account_owner:
+	refernece_institution:
+	supplementary_details:
+closing_balance:C000103HKD30,
+	debit_or_credit:C
+	date:000103
+	currency:HKD
+	amount:30,
+-}
+{5:{CHK:22ED16B18106}{TNG:}}
