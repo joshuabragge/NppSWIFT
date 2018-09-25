@@ -4,15 +4,15 @@ Notepad++ Plugin for Swift Messages
 ======================
 NppSWIFT is a plugin for [Notepad++](https://notepad-plus-plus.org/) which will convert the machine readable text into something slightly more friendly for humans.
 
-[![plugin-screenshot-example](https://github.com/joshuabragge/NppSWIFT/blob/master/Examples/Images/plugin-screenshot-example.JPG)
+![plugin-screenshot-example](https://github.com/joshuabragge/NppSWIFT/blob/master/Examples/Images/plugin-screenshot-example.JPG)
 
 ### Before MT950 Message Conversion
 
-[![before-screenshot-conversion](https://github.com/joshuabragge/NppSWIFT/blob/master/Examples/Images/message-before-screenshot-example.JPG)
+![before-screenshot-conversion](https://github.com/joshuabragge/NppSWIFT/blob/master/Examples/Images/message-before-screenshot-example.JPG)
 
 ### After MT950 Message Conversion
 
-[![after-screenshot-conversion](https://github.com/joshuabragge/NppSWIFT/blob/master/Examples/Images/message-after-screenshot-example.JPG)
+![after-screenshot-conversion](https://github.com/joshuabragge/NppSWIFT/blob/master/Examples/Images/message-after-screenshot-example.JPG)
 
 ## Table of Contents
 * [Overview](#notepad-plugin-for-swift-messages)
