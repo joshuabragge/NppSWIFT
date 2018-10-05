@@ -77,9 +77,9 @@ closing_balance:C000103HKD30,
 
 ## Considerations and Thoughts for Improvements
 While this was affective for my purposes at work, there are many way in which this script can be improved upon. 
-0. Dehuman the message! The ability to seemlessly switch between human and machine version would be super neat!
-1. Handling and parsing of messages when non-mandatory fields are filled in (MT950 field 61 for example).
-2. Remove looping over each field and message and update to a regex replace which would apply to all matching values. This should be much more efficient in theory.
-3. The datastructure for the SWIFT regexs' is setup in such a way that field 61 for an MT950 contains the same information and rules as it would for an MT940. I did not confirm this is always the case but if someone were to expand the compatibility of more messages, field consistency should be thoroughly checked.
-4. Active page is copied into memory and transformed. Exploration of Np++ features would provide more options and potential for optimizations - maybe working on sections is more efficient?
-5. Informative error messages. If format is incorrect, Np++ gives generic error.
+1. Dehuman the message! The ability to seemlessly switch between human and machine version would be super neat!
+2. Handling and parsing of messages when non-mandatory fields are filled in (MT950 field 61 for example).
+3. Remove looping over each field and message and update to a regex replace which would apply to all matching values. This should be much more efficient in theory.
+4. The datastructure for the SWIFT regexs' is setup in such a way that field 61 for an MT950 contains the same information and rules as it would for an MT940. I did not confirm this is always the case but if someone were to expand the compatibility of more messages, field consistency should be thoroughly checked.
+5. Active page is copied into memory and transformed. Exploration of Np++ features would provide more options and potential for optimizations - maybe working on sections is more efficient?
+6. Informative error messages. If format is incorrect, Np++ gives generic error.
